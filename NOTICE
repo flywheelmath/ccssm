@@ -1,0 +1,14 @@
+=========================================================================== == NOTICE file for the ccssm project (flywheelmath/ccssm)
+This project is licensed under the MIT License.
+The full text of the license can be found in the LICENSE file.
+
+Copyright (c) 2024 flywheelmath
+
+This project contains data derived from the "Common Core Mathematics Standards"
+project by Jeff Baumes. The original work is licensed under the Apache License,
+Version 2.0.
+
+The original project can be found at:
+https://github.com/jeffbaumes/standards
+
+A copy of the Apache License 2.0 can be found at: http://www.apache.org/licenses/LICENSE-2.0
