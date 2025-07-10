@@ -1,0 +1,874 @@
+source,target,relationship
+K.CC.A.1,1.NBT.A.1,dependency
+K.CC.A.1,K.CC.A.2,conceptual connection
+K.CC.A.1,K.CC.B.4,dependency
+K.CC.A.2,K.CC.B.4,conceptual connection
+K.CC.A.1,K.CC.A.3,dependency
+K.CC.B.4,K.CC.C.6,conceptual connection
+K.CC.B.4,K.CC.B.5,dependency
+K.CC.B.4,1.OA.C.5,conceptual connection
+K.CC.B.5,K.CC.A.3,dependency
+K.CC.B.4.c,K.CC.A.2,conceptual connection
+K.CC.B.4.c,1.OA.C.5,dependency
+K.CC.B.5,K.CC.C.6,conceptual connection
+K.CC.C.6,K.CC.B.4.c,conceptual connection
+K.CC.C.6,K.CC.C.7,dependency
+K.CC.C.6,K.MD.B.3,dependency
+K.CC.C.7,1.NBT.B.3,dependency
+K.G.A.1,K.G.A.2,conceptual connection
+K.G.A.1,K.G.A.3,conceptual connection
+K.G.A.1,K.G.B.4,dependency
+K.G.A.1,K.G.B.5,dependency
+K.G.A.1,K.G.B.6,dependency
+K.G.A.2,K.G.A.3,conceptual connection
+K.G.A.2,K.G.B.4,dependency
+K.G.A.2,K.G.B.5,dependency
+K.G.A.2,K.G.B.6,dependency
+K.G.A.2,1.G.A.1,dependency
+K.G.A.3,1.G.A.1,conceptual connection
+K.G.A.3,K.G.B.4,dependency
+K.G.A.3,K.G.B.5,dependency
+K.G.A.3,K.G.B.6,dependency
+K.G.B.4,1.G.A.1,dependency
+K.G.B.5,1.G.A.1,dependency
+K.G.B.6,1.G.A.2,dependency
+K.MD.A.1,K.MD.A.2,dependency
+K.MD.A.2,K.MD.B.3,dependency
+K.MD.A.2,1.MD.A.1,dependency
+K.MD.B.3,1.MD.C.4,dependency
+K.NBT.A.1,1.NBT.B.2,dependency
+K.OA.A.1,K.OA.A.2,dependency
+K.OA.A.2,K.OA.A.3,dependency
+K.OA.A.2,1.OA.A.1,dependency
+K.OA.A.2,1.OA.B.3,dependency
+K.OA.A.2,1.OA.B.4,dependency
+K.OA.A.2,1.OA.C.6,dependency
+K.OA.A.3,K.NBT.A.1,dependency
+K.OA.A.3,K.OA.A.4,dependency
+K.OA.A.3,K.OA.A.5,dependency
+K.OA.A.3,1.OA.C.6,dependency
+K.OA.A.4,1.OA.C.6,dependency
+K.OA.A.5,1.OA.C.6,dependency
+1.G.A.1,2.G.A.1,dependency
+1.G.A.2,1.G.A.3,dependency
+1.G.A.2,3.MD.C.5,dependency
+1.G.A.2,4.G.A.3,dependency
+1.G.A.3,2.G.A.3,dependency
+1.MD.A.1,1.MD.A.2,dependency
+1.MD.A.2,2.MD.A.1,dependency
+1.MD.B.3,2.MD.C.7,dependency
+1.MD.C.4,2.MD.D.10,dependency
+1.NBT.A.1,1.NBT.B.2,dependency
+1.NBT.B.2,1.NBT.B.3,dependency
+1.NBT.B.2,1.NBT.C.4,dependency
+1.NBT.B.2,1.NBT.C.5,dependency
+1.NBT.B.2,1.NBT.C.6,dependency
+1.NBT.B.2,2.NBT.A.1,dependency
+1.NBT.C.4,2.NBT.B.5,dependency
+1.NBT.C.4,2.OA.A.1,dependency
+1.NBT.C.5,2.NBT.B.5,dependency
+1.NBT.C.5,1.NBT.C.6,conceptual connection
+1.NBT.C.6,2.NBT.B.5,dependency
+1.NBT.C.5,2.OA.A.1,dependency
+1.NBT.C.6,2.OA.A.1,dependency
+1.OA.A.1,1.MD.C.4,dependency
+1.OA.A.1,1.OA.A.2,dependency
+1.OA.A.1,1.OA.D.8,conceptual connection
+1.OA.A.1,2.OA.A.1,dependency
+1.OA.A.1,1.OA.C.6,conceptual connection
+1.OA.A.2,1.MD.C.4,dependency
+1.OA.B.3,1.OA.B.4,conceptual connection
+1.OA.B.3,1.OA.C.6,dependency
+1.OA.B.3,2.NBT.B.9,dependency
+1.OA.B.3,4.NF.B.3.a,dependency
+1.OA.B.3,4.NF.B.3.b,dependency
+1.OA.B.3,4.NF.B.3.c,dependency
+1.OA.B.3,6.EE.A.3,dependency
+1.OA.B.3,6.EE.A.4,dependency
+1.OA.B.4,1.OA.C.6,dependency
+1.OA.B.4,2.NBT.B.9,dependency
+1.OA.B.4,3.NBT.A.2,dependency
+1.OA.B.4,4.NF.B.3.a,dependency
+1.OA.B.4,4.NF.B.3.b,dependency
+1.OA.B.4,4.NF.B.3.c,dependency
+1.OA.C.5,1.OA.C.6,dependency
+1.OA.C.6,1.OA.A.1,conceptual connection
+1.OA.C.6,2.OA.B.2,dependency
+1.OA.C.6,1.NBT.C.4,dependency
+1.OA.D.7,1.OA.D.8,dependency
+1.OA.D.7,2.OA.C.3,dependency
+1.OA.D.7,2.OA.C.4,dependency
+1.OA.D.8,4.MD.C.7,dependency
+1.OA.D.8,4.NF.B.3.d,dependency
+2.G.A.1,3.G.A.1,dependency
+2.G.A.2,2.G.A.3,dependency
+2.G.A.2,3.MD.C.6,dependency
+2.G.A.3,3.NF.A.1,dependency
+2.MD.A.1,2.MD.A.2,dependency
+2.MD.A.1,2.MD.A.3,dependency
+2.MD.A.1,3.MD.A.2,conceptual connection
+2.MD.A.1,3.MD.C.5,dependency
+2.MD.A.2,3.NF.A.1,dependency
+2.MD.A.3,2.MD.A.2,dependency
+2.MD.A.3,2.MD.A.4,dependency
+2.MD.A.4,2.MD.B.5,dependency
+2.MD.B.5,2.MD.B.6,conceptual connection
+2.MD.B.5,2.OA.A.1,conceptual connection
+2.MD.B.6,2.MD.D.9,conceptual connection
+2.MD.B.6,3.NF.A.2,dependency
+2.NBT.A.1,2.NBT.A.3,dependency
+2.NBT.A.1,2.NBT.A.4,dependency
+2.NBT.A.1,2.NBT.B.6,dependency
+2.NBT.A.1,2.NBT.B.7,dependency
+2.NBT.A.1,2.NBT.B.8,dependency
+2.NBT.A.1,3.NBT.A.1,dependency
+2.NBT.A.1,3.NBT.A.3,dependency
+2.NBT.A.1,4.NBT.A.1,dependency
+2.NBT.A.2,2.NBT.A.1,dependency
+2.NBT.A.2,2.OA.C.3,conceptual connection
+2.NBT.B.5,2.OA.A.1,conceptual connection
+2.NBT.B.7,2.NBT.B.8,conceptual connection
+2.NBT.B.7,2.NBT.B.9,conceptual connection
+2.NBT.B.7,2.NBT.B.6,dependency
+2.NBT.B.7,3.NBT.A.2,dependency
+2.NBT.B.8,2.NBT.B.9,conceptual connection
+2.NBT.B.8,3.NBT.A.2,dependency
+2.OA.A.1,2.MD.D.10,conceptual connection
+2.OA.A.1,2.MD.C.8,conceptual connection
+2.OA.A.1,3.OA.D.8,dependency
+2.OA.A.1,4.NF.B.3.a,dependency
+2.OA.A.1,4.NF.B.3.b,dependency
+2.OA.A.1,4.NF.B.3.c,dependency
+2.OA.B.2,2.NBT.B.5,dependency
+2.OA.C.3,3.OA.A.1,dependency
+2.OA.C.3,3.OA.D.9,dependency
+2.OA.C.4,3.OA.A.1,dependency
+3.G.A.1,4.G.A.1,dependency
+3.G.A.1,5.G.B.3,dependency
+3.MD.A.2,3.OA.D.8,conceptual connection
+3.MD.A.2,4.MD.A.1,dependency
+3.MD.A.2,3.NF.A.1,conceptual connection
+3.MD.B.4,4.MD.B.4,dependency
+3.MD.C.5,3.MD.C.6,dependency
+3.MD.C.5,3.MD.C.7.d,dependency
+3.MD.C.5,3.MD.D.8,dependency
+3.MD.C.5,5.MD.C.3,dependency
+3.MD.C.6,3.MD.C.7.a,dependency
+3.MD.C.7.a,3.MD.C.7.b,dependency
+3.MD.C.7.a,3.MD.C.7.c,dependency
+3.MD.C.7.b,3.MD.C.7.c,dependency
+3.MD.C.7.b,4.MD.A.3,dependency
+3.MD.C.7.b,5.NF.B.4.a,dependency
+3.MD.C.7.c,3.MD.C.7.d,dependency
+3.MD.D.8,4.MD.A.3,dependency
+3.NBT.A.1,4.NBT.A.3,dependency
+3.NBT.A.2,4.NBT.B.4,dependency
+3.NBT.A.2,4.NBT.B.5,dependency
+3.NBT.A.2,4.NBT.B.6,dependency
+3.NBT.A.3,4.NBT.B.5,dependency
+3.NF.A.1,3.G.A.2,dependency
+3.NF.A.1,3.NF.A.2,conceptual connection
+3.NF.A.1,3.NF.A.3,dependency
+3.NF.A.1,4.NF.B.3.a,dependency
+3.NF.A.1,4.NF.B.3.b,dependency
+3.NF.A.1,4.NF.B.3.c,dependency
+3.NF.A.1,4.NF.B.4.a,dependency
+3.NF.A.1,5.NF.B.7,dependency
+3.NF.A.2,3.MD.B.4,conceptual connection
+3.NF.A.2,3.NF.A.3,dependency
+3.NF.A.2,4.NF.B.3.a,dependency
+3.NF.A.2,4.NF.B.3.b,dependency
+3.NF.A.2,4.NF.B.3.c,dependency
+3.NF.A.2,5.G.A.1,dependency
+3.NF.A.2,5.G.A.2,dependency
+3.NF.A.2,6.NS.C.6.a,dependency
+3.NF.A.3,4.NF.A.1,dependency
+3.OA.A.1,3.OA.A.2,dependency
+3.OA.A.1,3.OA.A.3,dependency
+3.OA.A.1,3.OA.B.5,dependency
+3.OA.A.1,3.OA.B.6,conceptual connection
+3.OA.A.1,4.NF.B.4.a,dependency
+3.OA.A.1,4.OA.A.1,dependency
+3.OA.A.1,5.NF.B.3,dependency
+3.OA.A.2,5.NF.B.3,dependency
+4.OA.A.1,5.NF.B.3,dependency
+4.OA.A.2,5.NF.B.3,dependency
+3.OA.A.1,5.NF.B.5,dependency
+3.OA.A.2,5.NF.B.5,dependency
+4.OA.A.1,5.NF.B.5,dependency
+4.OA.A.2,5.NF.B.5,dependency
+3.OA.A.1,5.NF.B.6,dependency
+3.OA.A.2,5.NF.B.6,dependency
+4.OA.A.1,5.NF.B.6,dependency
+4.OA.A.2,5.NF.B.6,dependency
+3.OA.A.1,5.OA.A.2,dependency
+3.OA.A.2,5.OA.A.2,dependency
+4.OA.A.1,5.OA.A.2,dependency
+4.OA.A.2,5.OA.A.2,dependency
+3.OA.A.2,3.OA.A.3,dependency
+3.OA.A.2,3.OA.B.5,dependency
+3.OA.A.2,3.OA.B.6,conceptual connection
+3.OA.A.3,3.OA.A.4,conceptual connection
+3.OA.A.3,3.OA.D.8,dependency
+3.OA.A.3,4.NF.B.4.c,dependency
+3.OA.A.3,4.OA.A.1,dependency
+3.OA.A.3,4.OA.A.2,dependency
+3.OA.A.3,3.OA.B.6,conceptual connection
+3.OA.A.4,3.OA.C.7,conceptual connection
+3.OA.A.4,4.MD.A.3,dependency
+3.OA.B.5,3.MD.C.7.c,conceptual connection
+3.OA.B.5,3.NBT.A.3,dependency
+3.OA.B.5,3.OA.C.7,dependency
+3.OA.B.5,3.OA.D.9,dependency
+3.OA.B.5,4.NBT.B.5,dependency
+3.OA.B.5,4.NBT.B.6,dependency
+3.OA.B.5,5.MD.C.5.a,dependency
+3.OA.B.5,6.EE.A.3,dependency
+3.OA.B.5,6.EE.A.4,dependency
+3.OA.B.6,3.OA.C.7,dependency
+3.OA.B.6,5.NF.B.3,dependency
+3.OA.B.6,5.NF.B.7,dependency
+3.OA.B.6,6.NS.A.1,dependency
+3.OA.C.7,3.OA.D.8,conceptual connection
+3.OA.C.7,4.MD.A.1,dependency
+3.OA.C.7,4.NBT.B.5,dependency
+3.OA.C.7,4.NBT.B.6,dependency
+3.OA.C.7,4.OA.B.4,dependency
+3.OA.D.8,3.MD.B.3,conceptual connection
+3.OA.D.8,3.MD.C.7.d,conceptual connection
+3.OA.D.8,3.MD.D.8,conceptual connection
+3.OA.D.8,4.OA.A.3,dependency
+3.OA.D.9,4.OA.C.5,dependency
+4.G.A.1,4.G.A.2,dependency
+4.G.A.1,4.MD.C.5,conceptual connection
+4.G.A.2,5.G.B.3,dependency
+4.MD.A.1,4.MD.A.2,dependency
+4.MD.A.1,5.MD.A.1,dependency
+4.MD.A.1,6.RP.A.1,dependency
+4.MD.A.2,4.NF.B.3.d,conceptual connection
+4.MD.A.2,5.MD.A.1,dependency
+4.MD.A.2,5.NF.B.3,dependency
+4.MD.A.2,5.NF.B.5,dependency
+4.MD.A.2,5.NF.B.6,dependency
+4.MD.A.3,5.MD.C.5.a,dependency
+4.MD.A.3,6.G.A.1,dependency
+4.MD.B.4,4.NF.B.3.d,conceptual connection
+4.MD.B.4,5.MD.B.2,dependency
+4.MD.C.5,4.G.A.2,conceptual connection
+4.MD.C.5,4.MD.C.6,dependency
+4.MD.C.5,4.MD.C.7,dependency
+4.MD.C.7,7.G.B.5,dependency
+4.MD.C.5,HSG.C.A.1,dependency
+4.MD.C.5,HSG.CO.A.1,dependency
+4.NBT.A.1,4.NBT.A.2,dependency
+4.NBT.A.1,4.NBT.A.3,dependency
+4.NBT.A.1,4.NBT.B.4,dependency
+4.NBT.A.1,4.NBT.B.5,dependency
+4.NBT.A.1,4.NBT.B.6,dependency
+4.NBT.A.1,5.NBT.A.1,dependency
+4.NBT.A.2,4.NBT.A.3,dependency
+4.NBT.A.2,5.NBT.A.3,dependency
+4.NBT.A.3,4.OA.A.3,dependency
+4.NBT.A.3,5.NBT.A.4,dependency
+4.NBT.B.4,5.NBT.B.5,dependency
+4.NBT.B.4,5.NBT.B.6,dependency
+4.NBT.B.4,5.NBT.B.7,dependency
+4.NBT.B.5,4.NBT.B.6,dependency
+4.NBT.B.5,5.NBT.B.5,dependency
+4.NBT.B.6,4.OA.A.3,dependency
+4.NBT.B.6,5.NBT.B.6,dependency
+4.NF.A.1,4.NF.A.2,dependency
+4.NF.A.1,4.NF.B.3.c,dependency
+4.NF.A.1,4.NF.C.5,dependency
+4.NF.A.1,5.NF.A.1,dependency
+4.NF.A.1,5.NF.B.5,dependency
+4.NF.A.2,4.NF.C.7,dependency
+4.NF.A.2,5.NF.A.2,dependency
+4.NF.B.3.a,4.MD.A.2,dependency
+4.NF.B.3.b,4.MD.A.2,dependency
+4.NF.B.3.c,4.MD.A.2,dependency
+4.NF.B.3.a,4.NF.B.3.d,dependency
+4.NF.B.3.b,4.NF.B.3.d,dependency
+4.NF.B.3.c,4.NF.B.3.d,dependency
+4.NF.B.3.a,4.NF.C.5,dependency
+4.NF.B.3.b,4.NF.C.5,dependency
+4.NF.B.3.c,4.NF.C.5,dependency
+4.NF.B.3.a,5.NF.A.1,dependency
+4.NF.B.3.b,5.NF.A.1,dependency
+4.NF.B.3.c,5.NF.A.1,dependency
+4.NF.B.3.d,5.NF.A.1,dependency
+4.NF.B.4,5.NF.B.4.a,dependency
+4.NF.B.4,5.NF.B.7,dependency
+4.NF.B.4.a,4.NF.B.4.b,dependency
+4.NF.B.4.a,4.NF.B.4.c,conceptual connection
+4.NF.B.4.b,4.NF.B.4.c,conceptual connection
+4.NF.B.4.c,4.MD.A.2,dependency
+4.NF.C.5,4.MD.A.2,dependency
+4.NF.C.5,5.NBT.A.1,dependency
+4.NF.C.6,4.MD.A.2,dependency
+4.NF.C.6,4.NF.C.7,dependency
+4.NF.C.6,5.NBT.A.1,dependency
+4.NF.C.7,5.NBT.A.1,dependency
+4.NF.C.7,5.NBT.A.3,dependency
+4.OA.A.2,4.MD.A.1,conceptual connection
+4.OA.A.2,4.NF.A.1,dependency
+4.OA.A.2,4.NF.B.4.a,dependency
+4.OA.A.2,6.RP.A.1,dependency
+4.OA.A.2,6.RP.A.2,dependency
+4.OA.A.2,8.EE.A.3,dependency
+4.OA.A.3,4.MD.A.2,conceptual connection
+4.OA.A.3,7.NS.A.3,dependency
+4.OA.B.4,6.EE.A.1,dependency
+4.OA.B.4,6.NS.B.4,dependency
+4.OA.C.5,5.OA.B.3,dependency
+5.G.A.1,5.G.A.2,conceptual connection
+5.G.A.1,6.NS.C.6.b,dependency
+5.G.A.1,6.NS.C.6.c,dependency
+5.G.A.2,6.G.A.3,dependency
+5.G.A.2,6.NS.C.8,dependency
+5.G.A.2,6.RP.A.3.a,dependency
+5.G.B.3,5.G.B.4,dependency
+5.MD.B.2,6.SP.A.1,dependency
+5.MD.B.2,6.SP.A.2,dependency
+5.MD.B.2,6.SP.B.4,dependency
+5.MD.C.3,5.MD.C.4,dependency
+5.MD.C.3,5.MD.C.5.a,dependency
+5.MD.C.3,5.MD.C.5.c,dependency
+5.MD.C.4,5.MD.C.5.a,dependency
+5.MD.C.5.a,5.MD.C.5.b,dependency
+5.MD.C.5.a,6.G.A.2,dependency
+5.MD.C.5.b,5.MD.C.5.c,dependency
+5.MD.C.5.b,6.G.A.2,dependency
+5.NBT.A.1,5.NBT.A.2,dependency
+5.NBT.A.1,5.NBT.A.3,dependency
+5.NBT.A.1,5.NBT.A.4,dependency
+5.NBT.A.1,5.NBT.B.5,dependency
+5.NBT.A.1,5.NBT.B.6,dependency
+5.NBT.A.1,5.NBT.B.7,dependency
+5.NBT.A.2,5.NBT.B.5,conceptual connection
+5.NBT.A.2,5.NBT.B.7,conceptual connection
+5.NBT.A.2,6.EE.A.1,dependency
+5.NBT.A.2,8.EE.A.3,dependency
+5.NBT.A.3,5.NBT.A.4,dependency
+5.NBT.B.5,5.NBT.B.6,dependency
+5.NBT.B.5,5.NBT.B.7,conceptual connection
+5.NBT.B.5,6.NS.B.3,dependency
+5.NBT.B.6,5.NBT.B.7,conceptual connection
+5.NBT.B.6,6.NS.B.2,dependency
+5.NBT.B.6,6.NS.B.3,dependency
+5.NBT.B.7,5.MD.A.1,dependency
+5.NBT.B.7,6.NS.B.3,dependency
+5.NF.A.1,5.NBT.B.7,dependency
+5.NF.A.1,5.NF.A.2,dependency
+5.NF.A.1,6.EE.B.7,dependency
+5.NF.A.1,7.NS.A.1.d,dependency
+5.NF.A.2,5.MD.B.2,dependency
+5.NF.B.3,5.NF.B.4.a,conceptual connection
+5.NF.B.3,5.NF.B.5,conceptual connection
+5.NF.B.3,6.RP.A.2,dependency
+5.NF.B.3,7.NS.A.2.d,dependency
+5.NF.B.4,5.NBT.B.7,dependency
+5.NF.B.4,5.NF.B.5,dependency
+5.NF.B.4,5.NF.B.7,conceptual connection
+5.NF.B.4,6.EE.B.7,dependency
+5.NF.B.4,6.G.A.1,dependency
+5.NF.B.4,7.NS.A.2.c,dependency
+5.NF.B.4,7.SP.B.3,dependency
+5.NF.B.4.a,5.NF.B.4,dependency
+5.NF.B.4.a,5.NF.B.6,conceptual connection
+5.NF.B.5,5.OA.A.2,conceptual connection
+5.NF.B.5,6.RP.A.1,dependency
+5.NF.B.6,5.MD.B.2,dependency
+5.NF.B.6,5.NF.B.7,conceptual connection
+5.NF.B.6,5.NF.B.4,conceptual connection
+5.NF.B.6,5.NF.B.5,conceptual connection
+5.NF.B.7,5.NBT.B.7,dependency
+5.NF.B.7,6.NS.A.1,dependency
+5.NF.B.7,6.RP.A.2,dependency
+5.NF.B.7.c,5.MD.B.2,dependency
+5.OA.A.1,5.OA.A.2,dependency
+5.OA.A.2,6.EE.A.2,dependency
+5.OA.A.2,6.EE.A.3,dependency
+5.OA.A.2,6.EE.A.4,dependency
+5.OA.A.2,6.NS.B.4,dependency
+5.OA.B.3,6.EE.A.2,dependency
+5.OA.B.3,6.EE.C.9,dependency
+5.OA.B.3,6.RP.A.1,dependency
+6.EE.A.1,6.EE.A.2,dependency
+6.EE.A.1,8.EE.A.1,dependency
+6.EE.A.2,6.EE.A.3,dependency
+6.EE.A.2,6.EE.A.4,dependency
+6.EE.A.2,6.EE.B.5,dependency
+6.EE.A.2,6.EE.B.6,dependency
+6.EE.A.2,HSA.SSE.A.1,dependency
+6.EE.A.3,7.EE.A.1,dependency
+6.EE.A.4,7.EE.A.1,dependency
+6.EE.B.5,6.EE.B.7,conceptual connection
+6.EE.B.5,6.EE.B.8,conceptual connection
+6.EE.B.5,8.EE.A.2,dependency
+6.EE.B.5,8.EE.C.8,dependency
+6.EE.B.5,HSA.REI.A.1,dependency
+6.EE.B.5,HSA.REI.D.10,dependency
+6.EE.B.6,6.EE.B.7,conceptual connection
+6.EE.B.6,7.EE.B.4.a,dependency
+6.EE.B.6,7.EE.B.4.b,dependency
+6.EE.B.7,7.EE.B.4.a,dependency
+6.EE.B.7,6.EE.C.9,conceptual connection
+6.EE.B.7,6.RP.A.3.b,conceptual connection
+6.EE.B.8,7.EE.B.4.b,dependency
+6.EE.C.9,6.RP.A.3.b,conceptual connection
+6.G.A.1,6.G.A.4,dependency
+6.G.A.1,7.G.A.1,dependency
+6.G.A.1,7.G.B.4,dependency
+6.G.A.1,7.G.B.6,dependency
+6.G.A.1,HSG.MG.A.1,dependency
+6.G.A.2,7.G.B.6,dependency
+6.G.A.3,8.G.A.3,dependency
+6.G.A.3,8.G.B.8,dependency
+6.G.A.4,7.G.B.6,dependency
+6.NS.A.1,6.EE.B.7,dependency
+6.NS.A.1,7.NS.A.2.c,dependency
+6.NS.A.1,7.SP.B.3,dependency
+6.NS.B.2,6.NS.B.3,dependency
+6.NS.B.3,7.NS.A.3,dependency
+6.NS.B.4,6.EE.A.3,dependency
+6.NS.B.4,6.EE.A.4,dependency
+6.NS.C.5,6.NS.C.6.a,dependency
+6.NS.C.5,7.NS.A.1.a,dependency
+6.NS.C.6.a,6.EE.B.8,dependency
+6.NS.C.6.a,6.NS.C.6.b,dependency
+6.NS.C.6.a,6.NS.C.6.c,dependency
+6.NS.C.6.a,6.NS.C.7.c,dependency
+6.NS.C.6.a,7.NS.A.1.a,dependency
+6.NS.C.6.a,7.NS.A.1.b,dependency
+6.NS.C.6.b,6.NS.C.6.c,conceptual connection
+6.NS.C.6.b,6.NS.C.8,dependency
+6.NS.C.6.c,6.EE.B.8,dependency
+6.NS.C.6.c,6.NS.C.7.a,dependency
+6.NS.C.6.c,6.NS.C.7.b,dependency
+6.NS.C.7.a,6.EE.B.8,dependency
+6.NS.C.7.a,6.NS.C.7.d,dependency
+6.NS.C.7.b,6.EE.B.8,dependency
+6.NS.C.7.b,6.NS.C.7.a,conceptual connection
+6.NS.C.7.b,6.NS.C.7.d,dependency
+6.NS.C.7.c,6.NS.C.7.d,dependency
+6.NS.C.7.c,7.NS.A.1.b,dependency
+6.NS.C.7.c,7.NS.A.1.c,dependency
+6.NS.C.8,6.G.A.3,conceptual connection
+6.NS.C.8,8.SP.A.1,dependency
+6.RP.A.1,6.RP.A.2,dependency
+6.RP.A.1,6.RP.A.3.a,dependency
+6.RP.A.2,6.RP.A.3.b,dependency
+6.RP.A.2,6.RP.A.3.c,dependency
+6.RP.A.2,6.RP.A.3.d,dependency
+6.RP.A.2,7.RP.A.1,dependency
+6.RP.A.2,7.RP.A.2,dependency
+6.RP.A.3,7.RP.A.2,dependency
+6.RP.A.3,7.RP.A.3,dependency
+6.RP.A.3,HSN.Q.A.1,dependency
+6.RP.A.3.a,6.EE.C.9,conceptual connection
+6.RP.A.3.a,6.RP.A.3.b,dependency
+6.RP.A.3.c,6.EE.B.7,conceptual connection
+6.SP.A.1,6.SP.A.3,dependency
+6.SP.A.1,7.SP.A.1,dependency
+6.SP.A.2,6.SP.A.3,dependency
+6.SP.A.2,6.SP.B.5,dependency
+6.SP.A.2,7.SP.A.1,dependency
+6.SP.A.2,7.SP.B.3,dependency
+6.SP.A.2,HSS.ID.A.2,dependency
+6.SP.A.2,HSS.ID.A.3,dependency
+6.SP.A.2,HSS.ID.A.4,dependency
+6.SP.A.3,6.SP.B.5,dependency
+6.SP.A.3,HSS.ID.A.2,dependency
+6.SP.B.4,6.SP.B.5,conceptual connection
+6.SP.B.4,HSS.ID.A.1,dependency
+6.SP.B.5,HSS.IC.B.6,dependency
+6.SP.B.5,HSS.ID.A.2,dependency
+6.SP.B.5,HSS.ID.A.3,dependency
+7.EE.A.1,7.EE.A.2,conceptual connection
+7.EE.A.1,8.EE.C.7.b,dependency
+7.EE.A.1,HSA.APR.A.1,dependency
+7.EE.A.1,HSA.SSE.A.2,dependency
+7.EE.A.1,HSA.SSE.B.3.a,dependency
+7.EE.A.1,HSA.SSE.B.3.b,dependency
+7.EE.A.1,HSF.IF.C.8.a,dependency
+7.EE.A.1,HSF.IF.C.8.b,dependency
+7.EE.A.1,HSN.CN.A.2,dependency
+7.EE.A.2,HSA.SSE.A.1,dependency
+7.EE.A.2,HSA.SSE.B.3.a,dependency
+7.EE.A.2,HSA.SSE.B.3.b,dependency
+7.EE.A.2,HSA.SSE.B.3.c,dependency
+7.EE.B.3,8.EE.A.4,dependency
+7.EE.B.4,HSA.CED.A.1,dependency
+7.EE.B.4,HSA.REI.D.12,dependency
+7.EE.B.4.a,7.EE.B.4.b,dependency
+7.EE.B.4.a,8.EE.C.7.b,dependency
+7.EE.B.4.a,8.EE.C.8,dependency
+7.G.A.1,8.EE.B.6,dependency
+7.G.A.1,HSG.MG.A.3,dependency
+7.G.A.2,8.G.A.1,dependency
+7.G.A.2,HSG.CO.B.8,dependency
+7.G.A.2,HSG.CO.D.12,dependency
+7.G.A.3,HSG.GMD.B.4,dependency
+7.G.B.4,HSG.GMD.A.1,dependency
+7.G.B.4,HSG.MG.A.1,dependency
+7.G.B.4,HSG.MG.A.3,dependency
+7.G.B.5,8.G.A.1,dependency
+7.G.B.5,HSG.CO.C.9,dependency
+7.G.B.6,8.G.B.6,dependency
+7.G.B.6,HSG.MG.A.1,dependency
+7.G.B.6,HSG.MG.A.3,dependency
+7.NS.A.1.a,7.NS.A.1.b,conceptual connection
+7.NS.A.1.b,7.NS.A.1.c,dependency
+7.NS.A.1.b,7.NS.A.1.d,dependency
+7.NS.A.1.c,7.NS.A.1.d,dependency
+7.NS.A.1.d,7.NS.A.2.a,dependency
+7.NS.A.1.d,7.NS.A.3,dependency
+7.NS.A.2.a,7.NS.A.2.b,conceptual connection
+7.NS.A.2.a,7.NS.A.2.c,conceptual connection
+7.NS.A.2.c,7.NS.A.2.b,conceptual connection
+7.NS.A.2.c,7.NS.A.3,dependency
+7.NS.A.2.d,7.NS.A.3,dependency
+7.NS.A.2.d,8.NS.A.1,dependency
+7.NS.A.3,7.EE.B.3,dependency
+7.NS.A.3,7.EE.B.4.a,dependency
+7.NS.A.3,8.EE.A.2,dependency
+7.RP.A.1,7.RP.A.2,dependency
+7.RP.A.1,HSG.MG.A.2,dependency
+7.RP.A.1,HSN.Q.A.1,dependency
+7.RP.A.2,7.EE.B.4.a,conceptual connection
+7.RP.A.2,7.G.A.1,dependency
+7.RP.A.2,7.RP.A.3,dependency
+7.RP.A.2,8.EE.B.5,dependency
+7.RP.A.2,8.EE.B.6,dependency
+7.RP.A.2,8.F.A.1,dependency
+7.RP.A.2,8.F.A.2,dependency
+7.RP.A.2,8.F.B.4,dependency
+7.RP.A.2,HSG.SRT.C.6,dependency
+7.RP.A.3,7.SP.C.6,dependency
+7.RP.A.3,7.SP.C.7,dependency
+7.RP.A.3,7.SP.C.8,dependency
+7.RP.A.3,HSA.SSE.B.3.c,dependency
+7.RP.A.3,HSF.IF.C.8.b,dependency
+7.SP.A.1,7.SP.A.2,dependency
+7.SP.A.1,HSS.IC.A.1,dependency
+7.SP.A.1,HSS.IC.B.3,dependency
+7.SP.A.2,7.SP.B.4,dependency
+7.SP.A.2,HSS.IC.B.4,dependency
+7.SP.B.3,7.SP.B.4,dependency
+7.SP.B.3,HSS.ID.A.2,dependency
+7.SP.B.4,HSS.IC.B.5,dependency
+7.SP.B.4,HSS.ID.A.2,dependency
+7.SP.C.5,7.SP.A.1,dependency
+7.SP.C.5,7.SP.C.6,dependency
+7.SP.C.6,7.SP.C.7,dependency
+7.SP.C.7,7.SP.C.8,dependency
+7.SP.C.7,HSS.IC.A.2,dependency
+7.SP.C.8,HSS.CP.A.1,dependency
+7.SP.C.8,HSS.CP.A.2,dependency
+7.SP.C.8,HSS.CP.B.6,dependency
+8.EE.A.1,8.EE.A.3,dependency
+8.EE.A.1,8.EE.A.4,dependency
+8.EE.A.1,HSA.APR.A.1,dependency
+8.EE.A.1,HSN.RN.A.1,dependency
+8.EE.A.2,8.G.B.6,conceptual connection
+8.EE.A.2,8.G.C.9,dependency
+8.EE.A.2,HSA.CED.A.1,dependency
+8.EE.A.2,HSA.REI.B.4.a,dependency
+8.EE.A.2,HSA.REI.B.4.b,dependency
+8.EE.A.2,HSN.RN.A.1,dependency
+8.EE.A.3,8.EE.A.4,conceptual connection
+8.EE.A.4,HSN.Q.A.1,dependency
+8.EE.B.5,8.EE.B.6,conceptual connection
+8.EE.B.5,8.F.A.2,dependency
+8.EE.B.5,HSA.REI.D.10,dependency
+8.EE.B.6,8.EE.C.8,dependency
+8.EE.B.6,8.F.A.2,dependency
+8.EE.B.6,8.F.A.3,dependency
+8.EE.B.6,HSA.REI.D.10,dependency
+8.EE.B.6,HSG.GPE.B.5,dependency
+8.EE.C.7,HSA.CED.A.4,dependency
+8.EE.C.7,HSA.REI.A.1,dependency
+8.EE.C.7,HSA.REI.B.3,dependency
+8.EE.C.7.a,8.EE.C.7.b,conceptual connection
+8.EE.C.7.b,8.SP.A.3,conceptual connection
+8.EE.C.8,HSA.CED.A.2,dependency
+8.EE.C.8,HSA.CED.A.3,dependency
+8.EE.C.8,HSA.REI.C.5,dependency
+8.EE.C.8,HSA.REI.C.6,dependency
+8.EE.C.8,HSA.REI.C.7,dependency
+8.EE.C.8,HSA.REI.D.10,dependency
+8.EE.C.8,HSA.REI.D.12,dependency
+8.EE.C.8,HSG.GPE.B.5,dependency
+8.F.A.1,8.F.A.2,dependency
+8.F.A.1,8.F.A.3,dependency
+8.F.A.1,8.F.B.5,dependency
+8.F.A.1,HSF.IF.A.1,dependency
+8.F.A.1,HSG.C.A.2,dependency
+8.F.A.1,HSG.CO.A.2,dependency
+8.F.A.2,8.F.A.3,dependency
+8.F.A.2,8.F.B.5,dependency
+8.F.A.2,HSF.IF.C.9,dependency
+8.F.A.3,8.F.B.4,dependency
+8.F.A.3,8.F.B.5,dependency
+8.F.A.3,HSF.LE.A.1,dependency
+8.F.B.4,HSA.CED.A.2,dependency
+8.F.B.4,HSF.BF.A.1.a,dependency
+8.F.B.4,HSF.BF.A.2,dependency
+8.F.B.4,HSF.IF.B.6,dependency
+8.F.B.4,HSF.LE.A.1,dependency
+8.F.B.4,HSF.LE.A.2,dependency
+8.F.B.4,HSF.LE.B.5,dependency
+8.F.B.4,HSS.ID.C.7,dependency
+8.F.B.5,8.F.B.4,conceptual connection
+8.F.B.5,HSF.IF.B.4,dependency
+8.F.B.5,HSF.LE.A.1,dependency
+8.F.B.5,HSF.LE.A.3,dependency
+8.G.A.1,8.G.A.2,dependency
+8.G.A.1,8.G.A.3,dependency
+8.G.A.1,HSG.C.A.2,dependency
+8.G.A.1,HSG.CO.A.2,dependency
+8.G.A.1,HSG.CO.A.4,dependency
+8.G.A.2,8.G.A.4,dependency
+8.G.A.2,8.G.A.5,dependency
+8.G.A.2,HSG.CO.A.5,dependency
+8.G.A.2,HSG.CO.B.6,dependency
+8.G.A.3,8.G.A.4,dependency
+8.G.A.3,HSG.CO.A.5,dependency
+8.G.A.3,HSG.SRT.A.1,dependency
+8.G.A.4,8.G.A.5,dependency
+8.G.A.4,HSG.SRT.A.2,dependency
+8.G.A.5,8.EE.B.6,dependency
+8.G.A.5,HSG.CO.C.10,dependency
+8.G.A.5,HSG.CO.C.9,dependency
+8.G.A.5,HSG.SRT.A.3,dependency
+8.G.B.6,8.G.B.7,conceptual connection
+8.G.B.6,HSG.SRT.B.4,dependency
+8.G.B.7,8.G.B.8,dependency
+8.G.B.7,HSF.TF.C.8,dependency
+8.G.B.7,HSG.SRT.C.8,dependency
+8.G.B.8,HSG.GPE.A.1,dependency
+8.G.B.8,HSG.GPE.A.2,dependency
+8.G.B.8,HSG.GPE.B.4,dependency
+8.G.B.8,HSG.GPE.B.7,dependency
+8.G.C.9,HSG.GMD.A.1,dependency
+8.G.C.9,HSG.GMD.A.3,dependency
+8.G.C.9,HSG.MG.A.1,dependency
+8.G.C.9,HSG.MG.A.3,dependency
+8.NS.A.1,8.EE.A.2,conceptual connection
+8.NS.A.1,8.NS.A.2,conceptual connection
+8.NS.A.1,HSN.RN.B.3,dependency
+8.NS.A.2,8.EE.A.2,conceptual connection
+8.SP.A.1,8.SP.A.2,dependency
+8.SP.A.1,HSS.ID.B.6.c,dependency
+8.SP.A.1,HSS.ID.C.9,dependency
+8.SP.A.2,8.F.B.4,conceptual connection
+8.SP.A.2,8.SP.A.3,dependency
+8.SP.A.2,HSS.ID.B.6.b,dependency
+8.SP.A.2,HSS.ID.B.6.c,dependency
+8.SP.A.2,HSS.ID.C.8,dependency
+8.SP.A.3,8.F.B.4,conceptual connection
+8.SP.A.3,HSS.ID.C.7,dependency
+8.SP.A.4,HSS.CP.A.4,dependency
+8.SP.A.4,HSS.ID.B.5,dependency
+8.SP.A.4,HSS.ID.C.9,dependency
+HSA.APR.A.1,HSA.SSE.B.4,dependency
+HSA.APR.B.2,HSA.APR.B.3,dependency
+HSA.APR.B.2,HSN.CN.C.9,dependency
+HSA.APR.B.3,HSF.IF.C.7.c,conceptual connection
+HSA.APR.D.6,HSA.APR.B.2,dependency
+HSA.APR.D.6,HSA.SSE.B.4,dependency
+HSA.CED.A.1,HSF.LE.A.1,conceptual connection
+HSA.CED.A.1,HSF.LE.A.2,conceptual connection
+HSA.CED.A.2,HSA.CED.A.3,conceptual connection
+HSA.REI.A.1,HSA.REI.A.2,dependency
+HSA.REI.A.1,HSA.REI.B.3,dependency
+HSA.REI.A.1,HSA.REI.B.4.a,dependency
+HSA.REI.A.1,HSA.REI.B.4.b,dependency
+HSA.REI.A.2,HSF.BF.B.4.a,dependency
+HSA.REI.B.3,HSA.CED.A.1,dependency
+HSA.REI.B.3,HSA.CED.A.4,dependency
+HSA.REI.B.3,HSF.BF.B.4.a,dependency
+HSA.REI.B.4.a,HSA.REI.B.4.b,dependency
+HSA.REI.B.4.a,HSA.SSE.B.3.b,conceptual connection
+HSA.REI.B.4.a,HSG.GPE.A.1,dependency
+HSA.REI.B.4.b,HSA.CED.A.1,dependency
+HSA.REI.B.4.b,HSA.REI.C.7,dependency
+HSA.REI.B.4.b,HSA.SSE.B.3.a,dependency
+HSA.REI.B.4.b,HSN.CN.C.9,dependency
+HSA.REI.C.5,HSA.REI.C.6,dependency
+HSA.REI.C.6,HSA.CED.A.3,dependency
+HSA.REI.C.6,HSA.REI.C.7,dependency
+HSA.REI.C.6,HSA.REI.D.12,dependency
+HSA.CED.A.3,HSA.REI.C.7,conceptual connection
+HSA.REI.C.7,HSG.GPE.B.4,conceptual connection
+HSA.REI.D.10,HSA.CED.A.2,dependency
+HSA.REI.D.10,HSA.REI.C.6,dependency
+HSA.REI.D.10,HSA.REI.C.7,dependency
+HSA.REI.D.10,HSA.REI.D.11,dependency
+HSA.REI.D.10,HSA.REI.D.12,dependency
+HSA.REI.D.10,HSG.GPE.A.1,dependency
+HSA.REI.D.10,HSG.GPE.A.2,dependency
+HSA.REI.D.12,HSA.CED.A.3,dependency
+HSA.SSE.A.1,HSA.CED.A.1,dependency
+HSA.SSE.A.1,HSA.CED.A.2,dependency
+HSA.SSE.A.1,HSA.CED.A.3,dependency
+HSA.SSE.A.1,HSA.CED.A.4,dependency
+HSA.SSE.A.1,HSF.BF.B.3,conceptual connection
+HSA.SSE.A.1,HSF.LE.B.5,dependency
+HSA.SSE.A.2,HSA.APR.C.4,dependency
+HSA.SSE.A.2,HSA.APR.D.6,dependency
+HSA.SSE.A.2,HSA.SSE.B.4,dependency
+HSA.SSE.A.2,HSN.CN.C.8,dependency
+HSA.SSE.B.3.a,HSA.APR.B.2,dependency
+HSA.SSE.B.3.a,HSF.IF.C.8.a,conceptual connection
+HSA.SSE.B.3.b,HSF.IF.C.8.a,conceptual connection
+HSA.SSE.B.3.c,HSF.IF.C.8.b,conceptual connection
+HSA.SSE.B.4,HSF.LE.A.2,conceptual connection
+HSF.BF.A.1.a,HSF.BF.A.2,dependency
+HSF.BF.A.1.a,HSF.LE.A.2,conceptual connection
+HSF.BF.A.1.b,HSF.BF.A.2,dependency
+HSF.BF.A.1.b,HSF.LE.A.2,conceptual connection
+HSF.BF.A.2,HSF.LE.A.1,conceptual connection
+HSF.BF.A.2,HSF.LE.A.2,conceptual connection
+HSF.BF.B.3,HSF.TF.B.5,dependency
+HSF.BF.B.3,HSS.ID.B.6.a,conceptual connection
+HSF.BF.B.4,HSF.LE.A.4,conceptual connection
+HSF.IF.A.1,HSF.BF.A.1.a,dependency
+HSF.IF.A.1,HSF.BF.A.1.b,dependency
+HSF.IF.A.1,HSF.BF.B.4.a,dependency
+HSF.IF.A.1,HSF.IF.A.2,dependency
+HSF.IF.A.1,HSF.IF.A.3,conceptual connection
+HSF.IF.A.1,HSF.IF.B.4,dependency
+HSF.IF.A.1,HSF.IF.B.5,dependency
+HSF.IF.A.1,HSF.IF.C.7.a,dependency
+HSF.IF.A.1,HSF.IF.C.7.b,dependency
+HSF.IF.A.1,HSF.IF.C.7.c,dependency
+HSF.IF.A.1,HSF.IF.C.7.e,dependency
+HSF.IF.A.1,HSF.IF.C.9,dependency
+HSF.IF.A.1,HSF.TF.A.2,dependency
+HSF.IF.A.1,HSG.C.A.2,dependency
+HSF.IF.A.1,HSG.CO.A.2,dependency
+HSF.IF.A.2,HSF.BF.B.3,dependency
+HSF.IF.A.2,HSF.IF.A.3,dependency
+HSF.IF.A.2,HSG.C.A.2,dependency
+HSF.IF.A.2,HSG.CO.A.2,dependency
+HSF.IF.A.3,HSF.BF.A.1.b,dependency
+HSF.IF.A.3,HSF.BF.A.2,dependency
+HSF.IF.A.3,HSF.IF.A.1,conceptual connection
+HSF.IF.B.4,HSF.IF.B.5,conceptual connection
+HSF.IF.B.4,HSF.IF.B.6,conceptual connection
+HSF.IF.B.4,HSF.LE.B.5,conceptual connection
+HSF.IF.B.4,HSF.TF.B.5,conceptual connection
+HSF.IF.C.7.a,HSF.BF.B.3,dependency
+HSF.IF.C.7.b,HSF.BF.B.3,dependency
+HSF.IF.C.7.c,HSF.BF.B.3,dependency
+HSF.IF.C.7.d,HSF.BF.B.3,dependency
+HSF.IF.C.7.e,HSF.BF.B.3,dependency
+HSF.IF.C.7.e,HSF.LE.A.3,dependency
+HSF.IF.C.7.e,HSF.TF.B.5,dependency
+HSF.LE.A.1,HSF.LE.A.2,dependency
+HSF.LE.A.2,HSF.LE.B.5,conceptual connection
+HSF.LE.A.2,HSS.ID.B.6.a,conceptual connection
+HSF.LE.A.4,HSA.CED.A.1,dependency
+HSF.LE.A.4,HSF.BF.B.4.a,conceptual connection
+HSF.TF.A.1,HSF.TF.A.2,dependency
+HSF.TF.A.2,HSF.TF.B.5,dependency
+HSF.TF.A.2,HSF.TF.C.8,dependency
+HSF.TF.C.9,HSN.CN.B.5,dependency
+HSG.C.B.5,HSF.TF.A.1,dependency
+HSG.CO.A.1,HSF.TF.A.1,dependency
+HSG.CO.A.1,HSG.C.A.2,dependency
+HSG.CO.A.1,HSG.CO.A.2,dependency
+HSG.CO.A.1,HSG.CO.A.4,dependency
+HSG.CO.A.2,HSG.CO.A.3,dependency
+HSG.CO.A.2,HSG.CO.A.4,dependency
+HSG.CO.A.4,HSG.CO.A.5,dependency
+HSG.CO.A.5,HSG.CO.A.3,dependency
+HSG.CO.A.5,HSG.CO.B.6,dependency
+HSG.CO.B.6,HSG.CO.B.7,dependency
+HSG.CO.B.6,HSG.CO.B.8,dependency
+HSG.CO.B.6,HSG.CO.C.9,dependency
+HSG.CO.B.7,HSG.CO.B.8,dependency
+HSG.CO.B.8,HSG.CO.C.10,dependency
+HSG.CO.B.8,HSG.SRT.B.5,dependency
+HSG.CO.C.10,HSG.CO.C.11,dependency
+HSG.CO.C.10,HSG.SRT.B.4,dependency
+HSG.CO.C.10,HSG.SRT.C.7,dependency
+HSG.CO.C.9,HSG.CO.C.10,dependency
+HSG.CO.C.9,HSG.CO.C.11,dependency
+HSG.CO.D.12,HSG.CO.D.13,dependency
+HSG.GMD.A.1,HSG.GMD.A.3,dependency
+HSG.GMD.A.3,HSG.MG.A.1,conceptual connection
+HSG.GPE.A.1,HSA.REI.C.7,dependency
+HSG.GPE.A.1,HSG.GPE.B.4,dependency
+HSG.MG.A.1,HSG.MG.A.2,conceptual connection
+HSG.SRT.A.1,HSG.CO.A.5,dependency
+HSG.SRT.A.1,HSG.SRT.A.2,dependency
+HSG.SRT.A.2,HSG.SRT.A.3,dependency
+HSG.SRT.A.3,HSG.SRT.B.4,dependency
+HSG.SRT.A.3,HSG.SRT.B.5,dependency
+HSG.SRT.A.3,HSG.SRT.C.6,dependency
+HSG.SRT.B.5,HSG.GPE.B.5,dependency
+HSG.SRT.B.5,HSG.GPE.B.6,dependency
+HSG.SRT.C.6,HSF.TF.A.2,dependency
+HSG.SRT.C.6,HSF.TF.C.8,dependency
+HSG.SRT.C.6,HSG.SRT.C.7,dependency
+HSG.SRT.C.6,HSG.SRT.C.8,dependency
+HSG.SRT.C.7,HSG.SRT.C.8,dependency
+HSN.CN.A.1,HSN.CN.A.2,dependency
+HSN.CN.A.1,HSN.CN.B.4,dependency
+HSN.CN.A.1,HSN.CN.C.7,dependency
+HSN.CN.A.2,HSN.CN.A.3,dependency
+HSN.CN.A.2,HSN.CN.C.7,dependency
+HSN.CN.A.2,HSN.CN.C.8,dependency
+HSN.CN.A.3,HSN.CN.B.4,dependency
+HSN.CN.A.3,HSN.CN.B.5,dependency
+HSN.CN.B.4,HSN.CN.B.5,dependency
+HSN.CN.B.5,HSN.CN.B.6,dependency
+HSN.CN.C.7,HSA.REI.B.4.b,conceptual connection
+HSN.CN.C.7,HSA.SSE.B.3.a,dependency
+HSN.CN.C.7,HSN.CN.C.9,dependency
+HSN.CN.C.8,HSN.CN.C.9,dependency
+HSN.Q.A.1,HSA.CED.A.2,conceptual connection
+HSN.Q.A.1,HSG.MG.A.1,conceptual connection
+HSN.Q.A.1,HSG.MG.A.2,conceptual connection
+HSN.Q.A.2,HSG.MG.A.1,conceptual connection
+HSN.Q.A.2,HSG.MG.A.2,conceptual connection
+HSN.Q.A.3,HSG.MG.A.1,conceptual connection
+HSN.Q.A.3,HSG.MG.A.2,conceptual connection
+HSN.RN.A.1,HSN.RN.A.2,dependency
+HSN.RN.A.2,HSA.REI.A.2,dependency
+HSN.RN.A.2,HSA.SSE.B.3.c,dependency
+HSN.RN.A.2,HSF.IF.C.8.b,dependency
+HSN.RN.B.3,HSN.CN.A.1,dependency
+HSS.CP.A.1,HSS.CP.A.2,dependency
+HSS.CP.A.1,HSS.CP.A.3,dependency
+HSS.CP.A.1,HSS.CP.B.6,dependency
+HSS.CP.A.1,HSS.CP.B.7,dependency
+HSS.CP.A.2,HSS.CP.A.4,conceptual connection
+HSS.CP.A.2,HSS.CP.A.5,conceptual connection
+HSS.CP.A.2,HSS.CP.B.6,conceptual connection
+HSS.CP.A.3,HSS.CP.A.4,conceptual connection
+HSS.CP.A.3,HSS.CP.A.5,conceptual connection
+HSS.CP.A.3,HSS.CP.B.6,dependency
+HSS.CP.A.4,HSS.CP.A.5,conceptual connection
+HSS.CP.A.4,HSS.CP.B.6,conceptual connection
+HSS.CP.A.5,HSS.CP.B.6,conceptual connection
+HSS.IC.A.1,HSS.IC.B.3,dependency
+HSS.IC.A.1,HSS.IC.B.4,dependency
+HSS.IC.A.1,HSS.IC.B.5,conceptual connection
+HSS.IC.B.3,HSS.IC.B.6,dependency
+HSS.IC.B.4,HSS.IC.B.6,dependency
+HSS.IC.B.5,HSS.IC.B.6,dependency
+HSS.IC.B.6,HSS.ID.C.9,conceptual connection
+HSS.ID.C.7,HSS.ID.C.9,conceptual connection
+HSS.ID.A.1,HSS.ID.A.2,dependency
+HSS.ID.A.2,HSS.ID.A.3,conceptual connection
+HSS.ID.A.2,HSS.ID.A.4,dependency
+HSS.ID.B.5,HSS.CP.A.4,dependency
+HSS.ID.B.6.a,HSS.ID.B.6.b,dependency
+HSS.ID.B.6.b,HSS.ID.B.6.c,dependency
+HSS.ID.B.6.c,HSS.ID.C.7,conceptual connection
+HSS.ID.B.6.c,HSS.ID.C.8,conceptual connection
+HSS.ID.C.9,HSS.ID.C.7,conceptual connection
