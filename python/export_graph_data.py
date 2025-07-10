@@ -114,7 +114,7 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         "--output", 
-        default="../html/ccssm-graph-data.json", 
+        default="../ccssm-graph-data.json", 
         help="Path for the output ccssm-graph-data.json file."
     )
 
