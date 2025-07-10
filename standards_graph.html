@@ -107,6 +107,14 @@
             // FIX: Declare node and link variables in a higher scope
             let node, link;
 
+            // FIX: Define resetHighlight in the higher scope
+            function resetHighlight() {
+                if (node && link) {
+                    node.transition().duration(300).style('opacity', 1);
+                    link.transition().duration(300).style('stroke-opacity', 0.7);
+                }
+            }
+
             const svg = d3.select("#graph-container").append("svg")
                 .attr("width", width)
                 .attr("height", height)
@@ -120,15 +128,7 @@
             const tooltip = d3.select("#graph-container").append("div")
                 .attr("class", "tooltip");
 
-            // FIX: Define resetHighlight in the higher scope
-            function resetHighlight() {
-                if (node && link) {
-                    node.transition().duration(300).style('opacity', 1);
-                    link.transition().duration(300).style('stroke-opacity', 0.7);
-                }
-            }
-
-            d3.json("ccssm-graph-data.json").then(function(data) {
+            d3.json("graph_data.json").then(function(data) {
                 const nodes = data.nodes;
                 const links = data.links;
 
@@ -234,7 +234,7 @@
 
             }).catch(error => {
                 console.error('Error loading or parsing data:', error);
-                container.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">Error: Could not load ccssm-graph-data.json. Please ensure the file exists and is accessible.</p>`;
+                container.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">Error: Could not load graph_data.json. Please ensure the file exists and is accessible.</p>`;
             });
 
             function drag(simulation) {

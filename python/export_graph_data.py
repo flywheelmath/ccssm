@@ -11,7 +11,7 @@ def generate_graph_data(k8_path, hs_path, deps_path, output_path):
     Args:
         k8_path (str): Path to the ccssm-k8.json file.
         hs_path (str): Path to the ccssm-hs.json file.
-        deps_path (str): Path to the sanitized_dependencies.json file.
+        deps_path (str): Path to the ccssm-dependencies.json file.
         output_path (str): Path for the output graph_data.json file.
     """
     print("Starting graph data export...")
@@ -39,8 +39,11 @@ def generate_graph_data(k8_path, hs_path, deps_path, output_path):
     nodes = []
     
     category_names = {
-        "N": "Number & Quantity", "A": "Algebra", "F": "Functions",
-        "G": "Geometry", "S": "Statistics & Probability"
+        "N": "Number & Quantity",
+        "A": "Algebra",
+        "F": "Functions",
+        "G": "Geometry",
+        "S": "Statistics & Probability"
     }
 
     all_standards = k8_standards + hs_standards
