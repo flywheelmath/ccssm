@@ -25,6 +25,10 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             background-color: #fff;
             position: relative;
+            cursor: pointer;
+        }
+        .node {
+            cursor: pointer;
         }
         .tooltip {
             position: absolute;
@@ -53,6 +57,11 @@
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 12px;
+        }
+        .legend-title {
+            font-weight: bold;
+            margin-bottom: 8px;
         }
         .legend-item {
             display: flex;
@@ -65,11 +74,26 @@
             border-radius: 50%;
             margin-right: 8px;
         }
+        .legend-line {
+            width: 30px;
+            height: 2px;
+            margin-right: 8px;
+        }
+        .instructions {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 12px;
+            color: #6c757d;
+        }
     </style>
 </head>
 <body>
     <h1>CCSS Dependency Graph</h1>
     <div id="graph-container">
+        <div class="instructions">
+            <strong>Click a node</strong> to highlight its connections. <strong>Click background</strong> to reset.
+        </div>
         <div id="legend" class="legend"></div>
     </div>
 
@@ -80,54 +104,79 @@
             const width = container.clientWidth;
             const height = container.clientHeight;
 
+            // FIX: Declare node and link variables in a higher scope
+            let node, link;
+
             const svg = d3.select("#graph-container").append("svg")
                 .attr("width", width)
                 .attr("height", height)
                 .call(d3.zoom().on("zoom", function (event) {
-                   svg.attr("transform", event.transform)
+                   svg.select('g').attr("transform", event.transform)
                 }))
-                .append("g");
+                .on("click", resetHighlight); // This can now find the function
+
+            const g = svg.append("g");
 
             const tooltip = d3.select("#graph-container").append("div")
                 .attr("class", "tooltip");
 
-            // Load the data
+            // FIX: Define resetHighlight in the higher scope
+            function resetHighlight() {
+                if (node && link) {
+                    node.transition().duration(300).style('opacity', 1);
+                    link.transition().duration(300).style('stroke-opacity', 0.7);
+                }
+            }
+
             d3.json("ccssm-graph-data.json").then(function(data) {
                 const nodes = data.nodes;
                 const links = data.links;
 
-                // Create a color scale
+                g.append('defs').selectAll('marker')
+                    .data(['Dependency', 'Conceptual_Connection'])
+                    .join('marker')
+                    .attr('id', d => `arrow-${d.replace(' ', '_')}`)
+                    .attr('viewBox', '0 -5 10 10')
+                    .attr('refX', 18)
+                    .attr('refY', 0)
+                    .attr('markerWidth', 6)
+                    .attr('markerHeight', 6)
+                    .attr('orient', 'auto')
+                    .append('path')
+                    .attr('fill', d => d === 'Dependency' ? '#555' : '#aaa')
+                    .attr('d', 'M0,-5L10,0L0,5');
+
                 const uniqueGroups = [...new Set(nodes.map(d => d.group))];
                 const color = d3.scaleOrdinal(d3.schemeCategory10).domain(uniqueGroups);
 
-                // Setup the simulation
                 const simulation = d3.forceSimulation(nodes)
-                    .force("link", d3.forceLink(links).id(d => d.id).distance(70))
-                    .force("charge", d3.forceManyBody().strength(-150))
+                    .force("link", d3.forceLink(links).id(d => d.id).distance(90))
+                    .force("charge", d3.forceManyBody().strength(-200))
                     .force("center", d3.forceCenter(width / 2, height / 2));
 
-                // Draw links
-                const link = svg.append("g")
-                    .attr("stroke", "#999")
-                    .attr("stroke-opacity", 0.6)
+                // Assign to the higher-scoped variables
+                link = g.append("g")
+                    .attr("stroke-opacity", 0.7)
                     .selectAll("line")
                     .data(links)
                     .join("line")
-                    .attr("stroke-width", d => d.type === 'Dependency' ? 1.5 : 0.5)
-                    .attr("stroke-dasharray", d => d.type === 'Conceptual Connection' ? "3,3" : "none");
+                    .attr("stroke", d => d.type === 'Dependency' ? '#555' : '#aaa')
+                    .attr("stroke-width", d => d.type === 'Dependency' ? 1.5 : 1)
+                    .attr("stroke-dasharray", d => d.type === 'Conceptual Connection' ? "3,3" : "none")
+                    .attr("marker-end", d => `url(#arrow-${d.type.replace(' ', '_')})`);
 
-                // Draw nodes
-                const node = svg.append("g")
+                node = g.append("g")
                     .attr("stroke", "#fff")
                     .attr("stroke-width", 1.5)
                     .selectAll("circle")
                     .data(nodes)
                     .join("circle")
                     .attr("r", 8)
+                    .attr("class", "node")
                     .attr("fill", d => color(d.group))
-                    .call(drag(simulation));
+                    .call(drag(simulation))
+                    .on("click", nodeClicked);
 
-                // Tooltip events
                 node.on("mouseover", function(event, d) {
                     tooltip.transition().style("opacity", .9);
                     tooltip.html(`<strong>${d.id}</strong>${d.description}`)
@@ -138,35 +187,56 @@
                     tooltip.transition().style("opacity", 0);
                 });
 
-                // Ticked function
                 simulation.on("tick", () => {
                     link
                         .attr("x1", d => d.source.x)
                         .attr("y1", d => d.source.y)
                         .attr("x2", d => d.target.x)
                         .attr("y2", d => d.target.y);
-
                     node
                         .attr("cx", d => d.x)
                         .attr("cy", d => d.y);
                 });
 
-                // Legend
+                // --- Legend ---
                 const legendContainer = d3.select("#legend");
+                legendContainer.append("div").attr("class", "legend-title").text("Groups");
                 uniqueGroups.forEach(group => {
                     const legendItem = legendContainer.append("div").attr("class", "legend-item");
-                    legendItem.append("div")
-                        .attr("class", "legend-color")
-                        .style("background-color", color(group));
+                    legendItem.append("div").attr("class", "legend-color").style("background-color", color(group));
                     legendItem.append("span").text(group);
                 });
+                legendContainer.append("div").attr("class", "legend-title").style("margin-top", "15px").text("Links");
+                const linkTypes = [
+                    { label: "Dependency", color: "#555", dash: "none" },
+                    { label: "Conceptual Connection", color: "#aaa", dash: "3,3" }
+                ];
+                linkTypes.forEach(type => {
+                    const legendItem = legendContainer.append("div").attr("class", "legend-item");
+                    legendItem.append("div").attr("class", "legend-line").style("background-color", type.color).style("border-style", type.dash === 'none' ? 'solid' : 'dashed').style("border-width", "1px 0").style("border-color", type.color);
+                    legendItem.append("span").text(type.label);
+                });
+
+                // --- Highlighting Logic ---
+                function nodeClicked(event, clickedNode) {
+                    event.stopPropagation();
+                    const connectedNodeIDs = new Set();
+                    connectedNodeIDs.add(clickedNode.id);
+
+                    links.forEach(l => {
+                        if (l.source.id === clickedNode.id) connectedNodeIDs.add(l.target.id);
+                        if (l.target.id === clickedNode.id) connectedNodeIDs.add(l.source.id);
+                    });
+
+                    node.transition().duration(300).style('opacity', n => connectedNodeIDs.has(n.id) ? 1 : 0.1);
+                    link.transition().duration(300).style('stroke-opacity', l => (l.source.id === clickedNode.id || l.target.id === clickedNode.id) ? 0.7 : 0.1);
+                }
 
             }).catch(error => {
                 console.error('Error loading or parsing data:', error);
-                container.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">Error: Could not load graph_data.json. Please ensure the file exists and is accessible.</p>`;
+                container.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">Error: Could not load ccssm-graph-data.json. Please ensure the file exists and is accessible.</p>`;
             });
 
-            // Drag functionality
             function drag(simulation) {
                 function dragstarted(event, d) {
                     if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -182,10 +252,7 @@
                     d.fx = null;
                     d.fy = null;
                 }
-                return d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended);
+                return d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended);
             }
         });
     </script>
