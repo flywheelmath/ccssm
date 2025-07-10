@@ -11,8 +11,8 @@ def generate_graph_data(k8_path, hs_path, deps_path, output_path):
     Args:
         k8_path (str): Path to the ccssm-k8.json file.
         hs_path (str): Path to the ccssm-hs.json file.
-        deps_path (str): Path to the ccssm-dependencies.json file.
-        output_path (str): Path for the output ccssm-graph-data.json file.
+        deps_path (str): Path to the sanitized_dependencies.json file.
+        output_path (str): Path for the output graph_data.json file.
     """
     print("Starting graph data export...")
 
@@ -39,11 +39,8 @@ def generate_graph_data(k8_path, hs_path, deps_path, output_path):
     nodes = []
     
     category_names = {
-        "N": "Number & Quantity",
-        "A": "Algebra",
-        "F": "Functions",
-        "G": "Geometry",
-        "S": "Statistics & Probability"
+        "N": "Number & Quantity", "A": "Algebra", "F": "Functions",
+        "G": "Geometry", "S": "Statistics & Probability"
     }
 
     all_standards = k8_standards + hs_standards
@@ -59,8 +56,8 @@ def generate_graph_data(k8_path, hs_path, deps_path, output_path):
             std.get('standard_counter'),
             std.get('substandard_counter')
         ]
-        node_id = ".".join(filter(None, [str(p) for p in id_parts]))
 
+        node_id = ".".join([str(p) for p in id_parts if p is not None])
         group = f"Grade {std.get('grade_level_code')}"
         if std.get('grade_level_code') == 'HS':
             group = category_names.get(std.get('category_code'), "High School")
@@ -97,27 +94,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Generate a D3.js graph JSON file from standards and dependency JSON files."
     )
-    parser.add_argument(
-        "--k8-file", 
-        default="../json/ccssm-k8.json", 
-        help="Path to the K-8 standards JSON file."
-    )
-    parser.add_argument(
-        "--hs-file", 
-        default="../json/ccssm-hs.json", 
-        help="Path to the High School standards JSON file."
-    )
-    parser.add_argument(
-        "--deps-file", 
-        default="../json/ccssm-dependencies.json", 
-        help="Path to the dependencies JSON file."
-    )
-    parser.add_argument(
-        "--output", 
-        default="../ccssm-graph-data.json", 
-        help="Path for the output ccssm-graph-data.json file."
-    )
+    parser.add_argument("--k8-file", default="../json/ccssm-k8.json", help="Path to the K-8 standards JSON file.")
+    parser.add_argument("--hs-file", default="../json/ccssm-hs.json", help="Path to the High School standards JSON file.")
+    parser.add_argument("--deps-file", default="../json/ccssm-dependencies.json", help="Path to the sanitized dependencies JSON file.")
+    parser.add_argument("--output", default="../graph_data.json", help="Path for the output graph_data.json file.")
 
     args = parser.parse_args()
-
     generate_graph_data(args.k8_file, args.hs_file, args.deps_file, args.output)
