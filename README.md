@@ -5,7 +5,12 @@ Data tools for the Common Core State Standards for Mathematics
 
 The Common Core Mathematics standards and the logical dependencies and conceptual connections between them are represented by the dependency graph: [https://flywheelmath.github.io/ccssm/](https://flywheelmath.github.io/ccssm/)
 
-## JSON files
+## Data files
+
+The logical dependencies and, to a lesser extent, the standards included in the data here are incomplete.
+The intrepid may rectify this with access to the data files.
+
+### JSON files
 
 The ccssm-k8.json and ccssm-hs.json contain the data of (most of) the Common Core Mathematics standards for K-8 and High School, respectively.
 The file ccssm-dependencies.json lists logical dependencies and conceptual connections between the various standards.
